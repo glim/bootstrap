@@ -74,6 +74,7 @@ angular.module('ui.bootstrap.collapse',['ui.bootstrap.transition'])
             // the group while the animation was still running
             if ( !isCollapsed ) {
               fixUpHeight(scope, element, 'auto');
+              element.removeClass('collapse');
             }
           });
         }
